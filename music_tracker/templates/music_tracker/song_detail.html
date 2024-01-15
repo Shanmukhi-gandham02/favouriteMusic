@@ -1,0 +1,25 @@
+
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta character="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'music_tracker/main.css' %}">
+    <title>My Favourite Music</title>
+</head>
+<body>
+    <nav>
+        <h2>Tune Tracker</h2>
+    </nav>
+    
+    <section class="song-detail">
+        <h1>{{ song.title }}</h1>
+        <p>Artist: {{ song.artist }}</p>
+        <button class="btn"><a  href="{% url 'artist-list' %}"> View Artist Catalog</a></button>
+        <button class="btn"><a  href="{% url 'song-list' %}"> Go to home</a></button>
+    </section>
+    
+</body>
+</html>
+
