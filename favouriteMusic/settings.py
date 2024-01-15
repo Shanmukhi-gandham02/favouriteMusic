@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-szyij$4#fo28bxtopeq)lwsrvy3pr86cyqqjz$b*zhc(ox+jw6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -128,8 +128,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'music_tracker/static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'music_tracker/static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
