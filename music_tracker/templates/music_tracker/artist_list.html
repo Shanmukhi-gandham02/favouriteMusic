@@ -6,6 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'music_tracker/main.css' %}">
     <title>My Favourite Music</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Poppins, sans-serif;
+        }
+
+        body{
+            background-color: #ccc;
+
+        }
+
+        nav{
+            background-color: #ccc;
+            color: #05445e;
+            height: 100px;
+            padding:20px;
+            font-size:30px;
+            font-weight:600;
+            text-align: center;
+        }
+
+        main button, h1{
+            display:inline-block;
+        }
+
+        button{
+            float:right;
+            width:content-fit;
+            padding:10px;
+            background-color: #1c2841;
+            border:none;
+            border-radius: 4px;
+            font-size:19px;
+        }
+
+        button a,
+        ul a
+        {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .song-detail{
+            background-color: #05445e;
+            width: 60%;
+            max-width:700px;
+            color: #ccc;
+            margin:auto auto;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .song-detail h1{
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size:30px;
+            color:#fff;
+        }
+
+        .song-detail p{
+            font-weight: 600;
+            font-size: 26px;
+        }
+
+        .btn{
+            background-color:#1c2841;
+            margin: 20px auto;
+            float: none !important;
+            
+        }
+
+        section ul{
+            list-style: none;
+        }
+
+        section li{
+            font-size: 18px;
+            padding:10px;
+        }
+    </style>
 </head>
 <body>
     <nav>
